@@ -18,7 +18,7 @@ acm.jar: classes/acm/program/Program.class
 	@(cd classes; jar cf ../acm.jar `find acm -name '*.class'`; cd ..; cp -f acm.jar ../JavaBackEnd)
 	
 classes/acm/program/Program.class: src/acm/*/*.java
-	javac -d classes -classpath $(CP) -sourcepath src \
+	javac -source 1.5 -target 1.5 -d classes -classpath $(CP) -sourcepath src \
               src/acm/*/*.java
 
 # ***************************************************************

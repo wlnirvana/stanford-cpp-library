@@ -1087,6 +1087,9 @@ public class JTFTools {
 					String fileName = candidates[i];
 					if (fileName.endsWith(".class")) {
 						String className = fileName.substring(0, fileName.lastIndexOf(".class"));
+						if (className.equals("FormPreviewFrame")) {
+							continue;
+						}
 						if (className.indexOf("/") == -1 && checkIfLoaded(className)) {
 							try {
 								Class<?> c = Class.forName(className);

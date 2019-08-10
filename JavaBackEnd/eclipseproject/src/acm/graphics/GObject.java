@@ -642,7 +642,7 @@ public abstract class GObject implements Cloneable, Serializable, GScalable {
 	 * @param g The graphics context into which the painting is done
 	 * @usage gobj.paint(g);
 	 */
-	public final void paint(Graphics g) {
+	public void paint(Graphics g) {
 		if (this.isVisible) {
 			Graphics2D g2 = createTransformedGraphics(g);
 			paint2d(g2);
@@ -779,7 +779,7 @@ public abstract class GObject implements Cloneable, Serializable, GScalable {
 	 *
 	 * @param sf factor to scale in x and y dimensions (1.0 = same size)
 	 */
-	public final void scale(double sf) {
+	public void scale(double sf) {
 		scale(sf, sf);
 	}
 

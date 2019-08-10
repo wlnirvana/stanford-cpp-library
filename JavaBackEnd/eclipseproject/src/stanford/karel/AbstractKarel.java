@@ -410,6 +410,9 @@ abstract class AbstractKarel implements KarelInterface, ProgramInterface, Runnab
 					if (fileName.endsWith(".class")) {
 						String className = fileName.substring(0,
 								fileName.lastIndexOf(".class"));
+						if (className.equals("FormPreviewFrame")) {
+							continue;
+						}
 						if (className.indexOf("/") == -1
 								&& JTFTools.checkIfLoaded(className)) {
 							try {

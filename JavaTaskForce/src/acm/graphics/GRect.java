@@ -393,6 +393,14 @@ public class GRect extends GObject
 		return new Rectangle(GMath.round(getX()), GMath.round(getY()), GMath.round(frameWidth), GMath.round(frameHeight));
 	}
 
+        protected double getFrameWidth() {
+            return frameWidth;
+        }
+
+        protected double getFrameHeight() {
+            return frameHeight;
+        }
+
 /* Private instance variables */
 	private double frameWidth;
 	private double frameHeight;
