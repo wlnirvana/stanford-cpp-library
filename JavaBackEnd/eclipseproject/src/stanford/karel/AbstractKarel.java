@@ -417,7 +417,7 @@ abstract class AbstractKarel implements KarelInterface, ProgramInterface, Runnab
 								&& JTFTools.checkIfLoaded(className)) {
 							try {
 								Class<?> karelClass = Class
-										.forName("stanford.karel.Karel");
+										.forName("stanford.karel.AbstractKarel");
 								Class<?> c = Class.forName(className);
 								if (karelClass.isAssignableFrom(c)) {
 									result = className;
