@@ -13,6 +13,7 @@
    methods of `GObject` so that the subclass `GRect` can override them. Files
    changed:
     - `JavaBackEnd/eclipseproject/src/acm/graphics/GObject.java`
+4. Fixed `AbstractKarel` loading main class bug.
 
 # How to compile updated JAR for kido
 
